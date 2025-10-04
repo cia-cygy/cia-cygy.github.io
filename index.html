@@ -6,11 +6,19 @@
 -->
 <html>
 	<head>
-		<title>Helios by HTML5 UP</title>
+		<title>Sree's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+  		.justified-paragraph {
+    	text-align: justify;
+		padding-top: 20px;
+    	padding-left: 50px;
+    	padding-right: 50px;
+ 		}
+	</style>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -21,20 +29,20 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">Helios</a></h1>
+								<h1><a href="index.html" id="logo">Sreevatsav Polavarapu</a></h1>
 								<hr />
-								<p>Another fine freebie by HTML5 UP</p>
+								<p>IT & Cyber Enthusiast | Problem Solver | Continuous Learner</p>
 							</header>
 							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
+								<a href="#banner" class="button circled scrolly">Scroll</a>
 							</footer>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li>
+								<li><a href="index.html" style="padding-right: 10px;">Home</a></li>
+						<!--		<li>
 									<a href="#">Dropdown</a>
 									<ul>
 										<li><a href="#">Lorem ipsum dolor</a></li>
@@ -55,7 +63,7 @@
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
 								<li><a href="no-sidebar.html">No Sidebar</a></li>
-							</ul>
+							</ul> -->
 						</nav>
 
 				</div>
@@ -63,10 +71,15 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2>Hi. You're looking at <strong>Helios</strong>.</h2>
-						<p>
-							A (free) responsive site template by <a href="http://html5up.net">HTML5 UP</a>.
-							Built with HTML5/CSS3 and released under the <a href="http://html5up.net/license">CCA</a> license.
+						<h2><br>Hi..!</br>This website showcases how I satisfy my hunger for learning new tech, apart from working a full-time job @ Coles CFC.</h2>
+						<p class="justified-paragraph">
+							I am an IT professional with a strong foundation in cyber security and technical support, passionate about problem-solving, building secure systems,
+							and continuously learning through hands-on projects, labs, and real-world challenges. My background in operations leadership has shaped my ability
+							to stay calm under pressure, manage complex tasks, and communicate clearly with both technical and non-technical audiences. I’m now focused
+							on applying those strengths to IT and cyber security, contributing to resilient systems while developing my expertise further.
+						</p>
+						<p text-align: justify;>
+							Below is a carousel of my projects, labs, and write-ups...<br>A reflection of my curiosity, and commitment to growth in the cyber security field.
 						</p>
 					</header>
 				</section>
@@ -76,13 +89,54 @@
 					<div class="reel">
 
 						<article>
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<a href="https://github.com/cia-cygy/MiTM-ARP-Lab-Kali-Linux" class="image featured" target="_blank"><img src="images/pic01.png" alt="" /></a>
 							<header>
-								<h3><a href="#">Pulvinar sagittis congue</a></h3>
+								<h3><a href="https://github.com/cia-cygy/MiTM-ARP-Lab-Kali-Linux" target="_blank">MiTM - ARP Spoofing Lab</a></h3>
 							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+							<p>As part of my coursework at Kangan, I've performed a demonstration of Man-in-the-Middle Attack. Here's my write up posted on GitHub</p>
 						</article>
 
+						<article>
+							<a href="https://github.com/cia-cygy/Combat_BrowserCacheSmuggling_PythonCode" class="image featured" target="_blank"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3><a href="https://github.com/cia-cygy/Combat_BrowserCacheSmuggling_PythonCode" target="_blank">Attempt to Combat Browser Cache Smuggling Attack</a></h3>
+							</header>
+							<p>When I came across this <a href="https://cybersecuritynews.com/teams-malware-via-browsers-cache-smuggling/amp/"><strong>news article</strong></a>, I realised that there were
+							no guardrails for browser cache downloads. So, I've posted a python code in attempt to solve this.</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/cia-cygy/Locally_hosted_NAS_OMV" class="image featured" target="_blank"><img src="images/pic03.jpg" alt="" /></a>
+							<header>
+								<h3><a href="https://github.com/cia-cygy/Locally_hosted_NAS_OMV" target="_blank">NAS on my Home Network!</a></h3>
+							</header>
+							<p>I didn't know the concept of NAS until I met my friend @ Kangan. I repurposed my old Lenovo G500s laptop (Intel i3) into a home NAS using Debian 12 and OpenMediaVault (OMV).</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/cia-cygy/Pi-hole_via_Docker_Wi-Fi-only_Kali_Linux_Laptop" class="image featured" target="_blank"><img src="images/pic04.png" alt="" /></a>
+							<header>
+								<h3><a href="https://github.com/cia-cygy/Pi-hole_via_Docker_Wi-Fi-only_Kali_Linux_Laptop" target="_blank">Pi-Hole DNS Server on my old laptop</a></h3>
+							</header>
+							<p>I didn't think it was possible to setup pi-hole without a Raspberry Pi until I came across Docker Containerisation!</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Hosting Jellyfin Media Server locally</a></h3>
+							</header>
+							<p>Write-up coming soon...</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Host n8n on AWS</a></h3>
+							</header>
+							<p>Write-up coming soon...</p>
+						</article>
+<!--
 						<article>
 							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 							<header>
@@ -114,52 +168,12 @@
 							</header>
 							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
 						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Pulvinar sagittis congue</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Fermentum sagittis proin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Varius magnis sollicitudin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
+					-->
 					</div>
 				</section>
 
 			<!-- Main -->
-				<div class="wrapper style2">
+<!--				<div class="wrapper style2">
 
 					<article id="main" class="container special">
 						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
@@ -187,8 +201,8 @@
 
 				</div>
 
-			<!-- Features -->
-				<div class="wrapper style1">
+			Features -->
+<!--				<div class="wrapper style1">
 
 					<section id="features" class="container special">
 						<header>
@@ -230,14 +244,14 @@
 					</section>
 
 				</div>
-
+			-->
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
-						<div class="row">
+				<!--		<div class="row"> -->
 
 							<!-- Tweets -->
-								<section class="col-4 col-12-mobile">
+						<!--		<section class="col-4 col-12-mobile">
 									<header>
 										<h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
 									</header>
@@ -268,9 +282,9 @@
 										</li>
 									</ul>
 								</section>
-
+							-->
 							<!-- Posts -->
-								<section class="col-4 col-12-mobile">
+							<!--	<section class="col-4 col-12-mobile">
 									<header>
 										<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
 									</header>
@@ -309,9 +323,9 @@
 										</li>
 									</ul>
 								</section>
-
+							-->
 							<!-- Photos -->
-								<section class="col-4 col-12-mobile">
+							<!--	<section class="col-4 col-12-mobile">
 									<header>
 										<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
 									</header>
@@ -338,6 +352,7 @@
 								</section>
 
 						</div>
+					-->
 						<hr />
 						<div class="row">
 							<div class="col-12">
@@ -345,23 +360,23 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
-											<h3>Nisl turpis nascetur interdum?</h3>
+											<h3>Connect with me on LinkedIn</h3>
 										</header>
-										<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+										<p>Always eager to connect and learn!</p>
 										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://github.com/cia-cygy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<!--						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
+											<li><a href="mailto:sree@theogcygy.cc" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
+											<li><a href="https://www.linkedin.com/in/sreevatsavpolavarapu/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
 										</ul>
 									</section>
 
 								<!-- Copyright -->
 									<div class="copyright">
 										<ul class="menu">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li><a href="https://theogcygy.cc">the OG CyGy</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 										</ul>
 									</div>
 
